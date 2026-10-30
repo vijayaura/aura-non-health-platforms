@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <title>Technology Delivery &amp; Operations SOP</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%2310202e' width='32' height='32'/%3E%3Crect fill='%23b5523a' x='6' y='8' width='20' height='3'/%3E%3Crect fill='%23f3efe7' x='6' y='14' width='14' height='3'/%3E%3Crect fill='%23f3efe7' x='6' y='20' width='20' height='3'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="backdrop"></div>
+
+  <div class="shell">
+    <aside class="nav" id="framework-nav" aria-label="Framework">
+      <div class="brand">
+        <div class="mark">TDO</div>
+        <p>Technology Delivery &amp; Operations SOP for P&amp;C, Salik–LIVA, and Motor.</p>
+        <p class="brand-meta">October 2026 · Internal</p>
+      </div>
+      <nav class="nav-links">
+        <p class="nav-label">Frame</p>
+        <a href="#overview">Overview</a>
+        <a href="#model">Three layers</a>
+        <a href="#principle">Operating standard</a>
+        <a href="#milestones">Delivery milestones</a>
+        <p class="nav-label">Build</p>
+        <a href="#priorities">First deliverables</a>
+        <a href="#controls">Control flows</a>
+        <a href="#register">SOP register</a>
+        <p class="nav-label">Run</p>
+        <a href="#cadence">Operating cadence</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#reporting">Monthly pack</a>
+        <p class="nav-label">Hold</p>
+        <a href="#enforce">Make it enforceable</a>
+        <a href="#rollout">Six-week rollout</a>
+        <a href="#close">Close</a>
+      </nav>
+      <div class="pager" aria-label="Section navigation">
+        <button type="button" id="prev-section">Previous</button>
+        <button type="button" id="next-section">Next</button>
+      </div>
+    </aside>
+
+    <div>
+      <div class="topbar">
+        <strong>TDO</strong>
+        <button class="menu-btn" id="menu" type="button" aria-expanded="false" aria-controls="framework-nav">Contents</button>
+      </div>
+
+      <main id="content">
+        <header class="hero" id="overview" data-nav>
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Engineering &amp; delivery framework · October 2026</p>
+              <h1>Technology Delivery &amp; Operations</h1>
+              <p class="deck">One operating model for P&amp;C, Salik–LIVA, and Motor. Engineering, QA, release, production support, security, requirements, and governance follow the same standard on every platform. The standard is measurable and auditable.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#model">Start with the model</a>
+                <a class="btn btn-ghost" href="#register">Open the SOP register</a>
+              </div>
+            </div>
+            <aside class="hero-card">
+              <p class="eyebrow">Governing principle</p>
+              <ol>
+                <li><span>01</span>Every requirement is traceable</li>
+                <li><span>02</span>Every task has an owner</li>
+                <li><span>03</span>Every change has evidence</li>
+                <li><span>04</span>Every release has approval</li>
+                <li><span>05</span>Every incident has a resolution path</li>
+                <li><span>06</span>Every recurring problem has a corrective action</li>
+              </ol>
+            </aside>
+          </div>
+          <ul class="hero-stats">
+            <li><strong data-stat="domains">11</strong><span>Domains in the common register</span></li>
+            <li><strong data-stat="sops">104</strong><span>Common SOPs every team follows</span></li>
+            <li><strong data-stat="platform">21</strong><span>Platform SOPs for what truly differs</span></li>
+            <li><strong>4</strong><span>Reports in the monthly management pack</span></li>
+          </ul>
+          <ol class="path">
+            <li><a href="#model">1 · Model</a></li>
+            <li><a href="#principle">2 · Standard</a></li>
+            <li><a href="#milestones">3 · Milestones</a></li>
+            <li><a href="#priorities">4 · First five</a></li>
+            <li><a href="#register">5 · Register</a></li>
+            <li><a href="#reporting">6 · Monthly pack</a></li>
+            <li><a href="#rollout">7 · Rollout</a></li>
+          </ol>
+        </header>
+
+        <section class="section" id="model" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">01 · Operating model</p>
+            <h2>Three layers, one way of working.</h2>
+            <p class="lede">Layer 1 is mandatory for every team. Layer 2 covers only the insurance behavior that is specific to a platform. Layer 3 is how execution, metrics, commitments, and people stay visible to management.</p>
+          </div>
+          <div class="layers">
+            <article class="layer">
+              <p class="layer-no">Layer 1</p>
+              <div>
+                <h3>Common SOPs</h3>
+                <ul class="layer-facts">
+                  <li><span>Applies to</span><strong>Every team, on every platform</strong></li>
+                  <li><span>Covers</span><strong>Engineering, QA, release, production support, security, recovery, requirements, and architecture</strong></li>
+                  <li><span>Standard</span><strong>The same entry criteria, evidence, and approval gates</strong></li>
+                </ul>
+                <div class="chips">
+                  <a class="chip" href="#domain-03">03 Development</a>
+                  <a class="chip" href="#domain-04">04 QA</a>
+                  <a class="chip" href="#domain-05">05 Release</a>
+                  <a class="chip" href="#domain-06">06 Support</a>
+                  <a class="chip" href="#domain-07">07 Security</a>
+                  <a class="chip" href="#domain-08">08 Recovery</a>
+                  <a class="chip" href="#domain-09">09 Requirements</a>
+                  <a class="chip" href="#domain-10">10 Architecture</a>
+                </div>
+              </div>
+            </article>
+            <article class="layer">
+              <p class="layer-no">Layer 2</p>
+              <div>
+                <h3>Platform SOPs</h3>
+                <ul class="layer-facts">
+                  <li><span>Applies to</span><strong>Only what is specific to one platform</strong></li>
+                  <li><span>Covers</span><strong>P&amp;C product configuration, Salik–LIVA integrations, and Motor workflows</strong></li>
+                  <li><span>Standard</span><strong>Sits under the common SOPs and protects the insurance outcome</strong></li>
+                </ul>
+              </div>
+            </article>
+            <article class="layer layer-gov">
+              <p class="layer-no">Layer 3</p>
+              <div>
+                <h3>Governance &amp; visibility</h3>
+                <ul class="layer-facts">
+                  <li><span>Applies to</span><strong>Execution, metrics, commitments, and people</strong></li>
+                  <li><span>Covers</span><strong>Daily work, monthly reporting, team effectiveness, and delivery commitments</strong></li>
+                  <li><span>Standard</span><strong>One tracker and one dashboard, by platform, module, sprint, and owner</strong></li>
+                </ul>
+                <div class="chips">
+                  <a class="chip" href="#domain-01">01 Reporting</a>
+                  <a class="chip" href="#domain-02">02 Operations</a>
+                  <a class="chip" href="#domain-11">11 People</a>
+                  <a class="chip" href="#dashboard">Dashboard</a>
+                  <a class="chip" href="#reporting">Monthly pack</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="principle" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">02 · Operating standard</p>
+            <h2>Six rules that make the model auditable.</h2>
+            <p class="lede">Each rule names an artifact someone can retrieve: a trace from requirement to release, a tracker field, a pull request, an approval, an incident record, or a corrective action.</p>
+          </div>
+          <ol class="rules">
+            <li class="rule">
+              <span>01</span>
+              <div>
+                <h3>Every requirement is traceable</h3>
+                <p>A requirement links to its development ticket, pull request, test cases, defects, and the release that carries it.</p>
+              </div>
+            </li>
+            <li class="rule">
+              <span>02</span>
+              <div>
+                <h3>Every task has an owner</h3>
+                <p>A named person on the tracker, a due date, and a backup owner for every critical module. Sprint commitment includes that owner.</p>
+              </div>
+            </li>
+            <li class="rule">
+              <span>03</span>
+              <div>
+                <h3>Every change has evidence</h3>
+                <p>A ticket, acceptance criteria, a reviewed pull request, test evidence, and a link from the requirement through to the release.</p>
+              </div>
+            </li>
+            <li class="rule">
+              <span>04</span>
+              <div>
+                <h3>Every release has approval</h3>
+                <p>QA sign-off, UAT where the change needs it, a security check, and a named deployment approver. Exceptions are written down before the window.</p>
+              </div>
+            </li>
+            <li class="rule">
+              <span>05</span>
+              <div>
+                <h3>Every incident has a resolution path</h3>
+                <p>Severity, an owner, a communication rhythm, and a record of how service was restored. The same path is used on all three platforms.</p>
+              </div>
+            </li>
+            <li class="rule">
+              <span>06</span>
+              <div>
+                <h3>Every recurring problem has a corrective action</h3>
+                <p>Repeated incidents move to a problem record with an owner and a due date. Closure requires evidence that the cause was removed.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="milestones" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">03 · Delivery milestones</p>
+            <h2>Four milestones. Report each one on its own.</h2>
+            <p class="lede">Monthly updates separate completed development, completed QA, UAT approval, and production release. A feature counts as delivered to the business only at the last of these.</p>
+          </div>
+          <ol class="milestones">
+            <li>
+              <span class="n">Milestone 01</span>
+              <h3>Development complete</h3>
+              <p>Code has merged through the required review, linked ticket, and quality gates.</p>
+            </li>
+            <li>
+              <span class="n">Milestone 02</span>
+              <h3>QA complete</h3>
+              <p>Planned tests, regression, and retests are done. Release-blocking defects are closed or formally accepted.</p>
+            </li>
+            <li>
+              <span class="n">Milestone 03</span>
+              <h3>UAT approved</h3>
+              <p>The named business owner has accepted the scenarios, with any exception written down.</p>
+            </li>
+            <li>
+              <span class="n">Milestone 04</span>
+              <h3>Released to production</h3>
+              <p>The deployment finished and the critical business journeys were validated afterwards.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="priorities" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">04 · Where to start</p>
+            <h2>Five deliverables before the rest of the handbook.</h2>
+            <p class="lede">Put these into daily use first. The remaining security, recovery, architecture, people, and improvement SOPs land once this core is consistent.</p>
+          </div>
+          <ol class="priorities">
+            <li class="priority">
+              <span class="n">01</span>
+              <div>
+                <h3>Master project tracker &amp; management dashboard</h3>
+                <p>One source of truth for P&amp;C, Salik–LIVA, and Motor. Every item has an owner, platform, module, priority, status, sprint, due date, and acceptance criteria.</p>
+              </div>
+            </li>
+            <li class="priority">
+              <span class="n">02</span>
+              <div>
+                <h3>Engineering development &amp; pull request SOP</h3>
+                <p>Definition of Ready, branch naming, mandatory review, linked tickets, test evidence, quality gates, and protected production branches.</p>
+              </div>
+            </li>
+            <li class="priority">
+              <span class="n">03</span>
+              <div>
+                <h3>QA, UAT &amp; release management SOP</h3>
+                <p>Entry and exit criteria, regression, business sign-off, and a release checklist that ends with journey validation.</p>
+              </div>
+            </li>
+            <li class="priority">
+              <span class="n">04</span>
+              <div>
+                <h3>Production support &amp; incident management SOP</h3>
+                <p>Monitoring, the support module, Jira, email, severity, stakeholder updates, and a path from incident to corrective action.</p>
+              </div>
+            </li>
+            <li class="priority">
+              <span class="n">05</span>
+              <div>
+                <h3>Business requirement &amp; product configuration SOP</h3>
+                <p>Intake, analysis, acceptance criteria, named approval, configuration testing, versioning, and traceability through to release.</p>
+              </div>
+            </li>
+          </ol>
+          <p class="follow">Security gates, disaster recovery drills, architecture review, ownership and handover, and SOP compliance audits follow in the same handbook. They are part of the register from day one and become operating routine after the five above are stable.</p>
+        </section>
+
+        <section class="section" id="controls" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">05 · Completion tests</p>
+            <h2>A step is finished only when the evidence exists.</h2>
+            <p class="lede">These four tests sit on top of the register. They are the questions a lead can ask in the daily sync without opening every SOP.</p>
+          </div>
+          <div class="tests">
+            <article class="test">
+              <span>Work</span>
+              <h3>Ticket and evidence</h3>
+              <p>No work starts without a ticket. No ticket is complete without acceptance criteria and the required evidence.</p>
+            </article>
+            <article class="test">
+              <span>Release</span>
+              <h3>Journeys validated</h3>
+              <p>The release closes when critical business journeys have been checked in production, after the deployment itself.</p>
+            </article>
+            <article class="test">
+              <span>Recovery</span>
+              <h3>Restore demonstrated</h3>
+              <p>The recovery plan stands when a drill has restored the service and verified data integrity within the agreed RTO and RPO.</p>
+            </article>
+            <article class="test">
+              <span>Configuration</span>
+              <h3>Human authorization</h3>
+              <p>AI-drafted formulas, underwriting rules, and customer documents are published only after validation and a named approval.</p>
+            </article>
+          </div>
+
+          <div class="flow">
+            <h3>Release checklist</h3>
+            <p>Run the list in order. Rollback and database recovery are decided before the window opens, including for an emergency hotfix, which still needs testing and a retrospective approval.</p>
+            <ol class="steps">
+              <li class="step"><span>01</span><strong>Scope and version freeze</strong></li>
+              <li class="step"><span>02</span><strong>Code freeze and merge approval</strong></li>
+              <li class="step"><span>03</span><strong>QA sign-off and regression</strong></li>
+              <li class="step"><span>04</span><strong>UAT sign-off where required</strong></li>
+              <li class="step"><span>05</span><strong>Security and configuration checks</strong></li>
+              <li class="step"><span>06</span><strong>Database migration and backup</strong></li>
+              <li class="step"><span>07</span><strong>Deployment approval and window</strong></li>
+              <li class="step"><span>08</span><strong>Execution by a named owner</strong></li>
+              <li class="step"><span>09</span><strong>Smoke test and business validation</strong></li>
+              <li class="step"><span>10</span><strong>Monitor, close, or roll back</strong></li>
+            </ol>
+          </div>
+
+          <div class="flow">
+            <h3>Incident path</h3>
+            <p>P&amp;C runs this through the Response Center. Salik–LIVA and Motor use the same severity, ownership, and communication rules, with their own escalation contacts.</p>
+            <ol class="steps five">
+              <li class="step"><span>01 · Detect</span><strong>APM, logs, uptime, API failures, and business-transaction alerts</strong></li>
+              <li class="step"><span>02 · Record</span><strong>Ticket, logs, time, environment, correlation ID, and product</strong></li>
+              <li class="step"><span>03 · Classify</span><strong>Severity, impact, module team, and an incident commander when major</strong></li>
+              <li class="step"><span>04 · Recover</span><strong>Investigate, mitigate, communicate, fix, and validate</strong></li>
+              <li class="step"><span>05 · Prevent</span><strong>Cause, corrective action, better monitoring, and a post-incident review</strong></li>
+            </ol>
+            <div class="record">
+              <p class="eyebrow">Incident record</p>
+              <ul class="fields">
+                <li>Platform</li>
+                <li>Environment</li>
+                <li>Service</li>
+                <li>Customer or business impact</li>
+                <li>Severity</li>
+                <li>First detected time</li>
+                <li>Ticket owner</li>
+                <li>Incident timeline</li>
+                <li>Linked deployment</li>
+                <li>Root cause</li>
+                <li>Corrective action</li>
+                <li>Next update time</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flow">
+            <h3>AI-assisted product configuration</h3>
+            <p>Use AI to draft from an approved specification. Publication stays with a product owner or authorized underwriter. The same rule covers Motor data cleansing before a vehicle is rated.</p>
+            <ol class="steps seven">
+              <li class="step"><span>01</span><strong>Draft fields and validation</strong></li>
+              <li class="step"><span>02</span><strong>Draft formulas, rules, and documents</strong></li>
+              <li class="step"><span>03</span><strong>Consistency checks</strong></li>
+              <li class="step"><span>04</span><strong>Scenario validation</strong></li>
+              <li class="step"><span>05</span><strong>Human approval</strong></li>
+              <li class="step"><span>06</span><strong>Version, publish, and audit</strong></li>
+              <li class="step"><span>07</span><strong>Monitor and roll back</strong></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="section" id="register" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">06 · Master register</p>
+            <h2>104 common SOPs in 11 domains.</h2>
+            <p class="lede">This is the controlled list. Each SOP will use the same document template: owner, approver, trigger, procedure, evidence, and escalation.</p>
+          </div>
+          <div class="toc" id="toc" aria-label="Domains"></div>
+          <div class="search-wrap">
+            <label for="q">Search the register</label>
+            <input id="q" class="search" type="search" placeholder="Rating, hotfix, UAT, access, RTO…" autocomplete="off">
+            <p id="search-status" class="search-status" aria-live="polite"></p>
+          </div>
+          <div class="toolbar">
+            <button class="text-btn" id="expand-all" type="button">Expand all</button>
+            <button class="text-btn" id="collapse-all" type="button">Collapse all</button>
+          </div>
+          <div id="register-root"></div>
+          <p id="empty" class="empty" hidden>Nothing in the common register matches.</p>
+          <noscript><p>Turn on JavaScript to expand the register. The rest of this page is readable without it.</p></noscript>
+        </section>
+
+        <section class="section" id="cadence" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">07 · Operating cadence</p>
+            <h2>Every meeting has an owner and an output.</h2>
+            <p class="lede">The daily lead sync handles exceptions and decisions. Routine status stays in the tracker and the dashboard. Invite the owner and the people required to make the decision.</p>
+          </div>
+          <div class="cadence">
+            <div class="cadence-head">
+              <span>When</span><span>Meeting</span><span>Owner</span><span>Output</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Daily · 30 min</span>
+              <strong>Engineering leads sync</strong>
+              <span>Technology lead</span>
+              <span>Priorities, blockers, escalations, and owners</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Daily</span>
+              <strong>Production support review</strong>
+              <span>Support lead</span>
+              <span>Open incidents, SLA risks, and next actions</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Weekly</span>
+              <strong>Sprint and delivery review</strong>
+              <span>Project manager / leads</span>
+              <span>Forecast, carry-forward work, and dependencies</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Weekly</span>
+              <strong>QA and defect review</strong>
+              <span>QA lead</span>
+              <span>Defect trends, release blockers, and regression status</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Weekly · as needed</span>
+              <strong>Architecture review</strong>
+              <span>Technical lead</span>
+              <span>Design decisions and technical risk actions</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Every sprint</span>
+              <strong>Planning, demo, retrospective</strong>
+              <span>Team leads</span>
+              <span>Commitment, accepted work, and improvement actions</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Monthly</span>
+              <strong>Management delivery review</strong>
+              <span>Technology leadership</span>
+              <span>Features, metrics, risks, and the next-month plan</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Monthly</span>
+              <strong>Security and access review</strong>
+              <span>Security / platform owners</span>
+              <span>Vulnerabilities, access exceptions, and remediation</span>
+            </div>
+            <div class="cadence-row">
+              <span class="when">Quarterly</span>
+              <strong>DR and resilience review</strong>
+              <span>Infrastructure / operations</span>
+              <span>Recovery-test evidence and the remediation plan</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="dashboard" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">08 · Management dashboard</p>
+            <h2>One scorecard, three platforms.</h2>
+            <p class="lede">Drill down by platform, module, sprint, and owner. Use the same definitions everywhere so a comparison between P&amp;C, Salik–LIVA, and Motor means something. Set a baseline, then agree the target.</p>
+          </div>
+          <div class="scorecard">
+            <article class="score">
+              <h3>Delivery</h3>
+              <p>Commit versus done. Sprint predictability, milestones, and release status.</p>
+            </article>
+            <article class="score">
+              <h3>Quality</h3>
+              <p>Defect trends, escaped defects, reopen rate, and regression results.</p>
+            </article>
+            <article class="score">
+              <h3>Reliability</h3>
+              <p>Availability, latency, incidents, and time to restore service.</p>
+            </article>
+            <article class="score">
+              <h3>Resources</h3>
+              <p>Allocation, support load, blockers, leave, and module ownership.</p>
+            </article>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><strong>Sprint completion rate</strong><span>Planned work versus work actually completed.</span></div>
+            <div class="kpi"><strong>Cycle time</strong><span>Time from the start of work to completion.</span></div>
+            <div class="kpi"><strong>Release frequency</strong><span>How often production releases occur.</span></div>
+            <div class="kpi"><strong>Change failure rate</strong><span>Deployments that need a rollback, hotfix, or other remediation.</span></div>
+            <div class="kpi"><strong>Defect escape rate</strong><span>Defects found after release, against all defects.</span></div>
+            <div class="kpi"><strong>MTTR</strong><span>Mean time to restore service after an incident.</span></div>
+            <div class="kpi"><strong>SLA compliance</strong><span>Incidents handled inside the agreed response and restoration targets.</span></div>
+            <div class="kpi"><strong>API success rate</strong><span>Reliability of critical external integrations, including insurer APIs.</span></div>
+            <div class="kpi"><strong>Reopened ticket rate</strong><span>A signal of gaps in implementation or verification.</span></div>
+            <div class="kpi"><strong>Overdue action items</strong><span>Decisions, corrective actions, and commitments past their due date.</span></div>
+          </div>
+          <p class="note">Judge contribution through quality, predictability, and collaboration. Account for complexity, support duty, review time, and dependencies.</p>
+        </section>
+
+        <section class="section" id="reporting" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">09 · Monthly management pack</p>
+            <h2>Nine source reports. Four packs leadership reads.</h2>
+            <p class="lede">Teams keep the nine reports because each one has a different owner and evidence trail. The management review reads four packs so business performance, delivery, reliability, and people stay distinct.</p>
+          </div>
+          <div class="packs">
+            <article class="pack">
+              <p class="n">Pack 1 · SOP-001</p>
+              <h3>Business transaction metrics</h3>
+              <p>What volume did each platform process, how did it move, and where did conversion or transactions fail?</p>
+            </article>
+            <article class="pack">
+              <p class="n">Pack 2 · SOP-002, 006, 008</p>
+              <h3>Delivery &amp; release</h3>
+              <p>What reached production, what reached UAT, what is still pending, and what is committed next month?</p>
+            </article>
+            <article class="pack">
+              <p class="n">Pack 3 · SOP-003, 005, 007, 009</p>
+              <h3>Technology &amp; reliability</h3>
+              <p>How are predictability, quality, deployments, incidents, API reliability, and recovery trending?</p>
+            </article>
+            <article class="pack">
+              <p class="n">Pack 4 · SOP-004, 006</p>
+              <h3>Team &amp; next month</h3>
+              <p>What did each person and module deliver, and what are the sprint commitments for next month?</p>
+            </article>
+          </div>
+
+          <div class="flow">
+            <h3>Inside the business transaction report</h3>
+            <p>Publish each platform on its own, then a consolidated view. Define the unit before the number is used: unique quotes apart from quote versions, API attempts apart from successful business transactions, and issued policies apart from renewals or endorsements.</p>
+          </div>
+          <div class="groups">
+            <article class="group">
+              <h3>Transaction volume</h3>
+              <ul>
+                <li>Initiated and completed</li>
+                <li>Quotes and policies issued</li>
+                <li>Premium or transaction value</li>
+                <li>By product, insurer, broker, or channel</li>
+              </ul>
+            </article>
+            <article class="group">
+              <h3>Conversion</h3>
+              <ul>
+                <li>Leads, quotes, and policies</li>
+                <li>Quote-to-policy conversion</li>
+                <li>Drop-off by journey stage</li>
+                <li>Time from quote to issue</li>
+              </ul>
+            </article>
+            <article class="group">
+              <h3>Operational performance</h3>
+              <ul>
+                <li>Successful and failed transactions</li>
+                <li>Failure rate and top reasons</li>
+                <li>External API success and downtime</li>
+                <li>Pending items, retries, mismatches</li>
+              </ul>
+            </article>
+            <article class="group">
+              <h3>Month on month</h3>
+              <ul>
+                <li>Current month against the last</li>
+                <li>Absolute change and growth</li>
+                <li>Product and platform trends</li>
+                <li>Business and technical reasons for a material move</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="matrix-wrap">
+            <table class="matrix">
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>Report</th>
+                  <th>What it must contain</th>
+                  <th>Pack</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SOP-001</td>
+                  <td>Business transaction metrics</td>
+                  <td>Volumes, conversion, failures, and platform performance, month on month.</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>SOP-002</td>
+                  <td>Delivery report</td>
+                  <td>Production releases, UAT deliveries, pending work, and delayed commitments, by milestone.</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>SOP-003</td>
+                  <td>Technology metrics</td>
+                  <td>Sprint completion, defect leakage, deployment frequency, incidents, and resolution time.</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>SOP-004</td>
+                  <td>Individual work &amp; efficiency</td>
+                  <td>Contribution, ownership, reviews, QA coverage, and blockers, read with complexity and support load.</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>SOP-005</td>
+                  <td>Platform health</td>
+                  <td>P&amp;C, Salik–LIVA, and Motor status, dependencies, risks, debt, and open issues.</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>SOP-006</td>
+                  <td>Next-month plan</td>
+                  <td>Features, sprint commitments, resource allocation, and dependencies.</td>
+                  <td>2 and 4</td>
+                </tr>
+                <tr>
+                  <td>SOP-007</td>
+                  <td>Risk &amp; escalation</td>
+                  <td>Impact, owner, mitigation, due date, and whether it has been escalated.</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>SOP-008</td>
+                  <td>Customer commitments</td>
+                  <td>Promised dates, client dependencies, UAT commitments, and production deadlines.</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>SOP-009</td>
+                  <td>Technical debt</td>
+                  <td>Aging issues, remediation, risk level, and the sprint that will take the work.</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section" id="enforce" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">10 · Enforceability</p>
+            <h2>Same template. Named approver. An audit trail.</h2>
+            <p class="lede">A process is in force when it has an owner, a place it lives, evidence someone can retrieve, and a consequence when the same gap repeats.</p>
+          </div>
+          <ol class="template">
+            <li><span>01</span><div>SOP ID, title, and version</div></li>
+            <li><span>02</span><div>Purpose and scope</div></li>
+            <li><span>03</span><div>Applicable platforms and modules</div></li>
+            <li><span>04</span><div>Process owner and responsible roles</div></li>
+            <li><span>05</span><div>Trigger and required inputs</div></li>
+            <li><span>06</span><div>Step-by-step procedure</div></li>
+            <li><span>07</span><div>Mandatory checklist and approval gates</div></li>
+            <li><span>08</span><div>Expected outputs and evidence</div></li>
+            <li><span>09</span><div>SLA, deadlines, and escalation</div></li>
+            <li><span>10</span><div>Exceptions and emergency procedure</div></li>
+            <li><span>11</span><div>Tools, templates, and linked documents</div></li>
+            <li><span>12</span><div>Audit trail, review frequency, and change history</div></li>
+          </ol>
+          <div class="roles">
+            <article class="role">
+              <h3>Responsible</h3>
+              <p>Does the work and produces the evidence.</p>
+            </article>
+            <article class="role">
+              <h3>Approver</h3>
+              <p>Signs the output and accepts exceptions.</p>
+            </article>
+            <article class="role">
+              <h3>Consulted</h3>
+              <p>Contributes before the decision is made.</p>
+            </article>
+            <article class="role">
+              <h3>Informed</h3>
+              <p>Receives the outcome and any change in date.</p>
+            </article>
+          </div>
+          <ul class="system">
+            <li><strong>Central repository</strong><span>Version-controlled home for every SOP.</span></li>
+            <li><strong>Master register</strong><span>Owner and next review date for each SOP.</span></li>
+            <li><strong>Acknowledgment</strong><span>Training or sign-off for the people the SOP applies to.</span></li>
+            <li><strong>Compliance audit</strong><span>Periodic check of evidence against the procedure.</span></li>
+            <li><strong>Exception register</strong><span>Approved deviations, with an expiry and an approver.</span></li>
+            <li><strong>Corrective action</strong><span>Raised when the same non-compliance shows up again.</span></li>
+          </ul>
+        </section>
+
+        <section class="section" id="rollout" data-nav>
+          <div class="section-head">
+            <p class="eyebrow">11 · Rollout</p>
+            <h2>Four phases, about six weeks.</h2>
+            <p class="lede">Introduce the operating rhythm and the quality gates before the full control set. Week 6 publishes the handbook against evidence from the first five weeks, including the gaps still open.</p>
+          </div>
+          <div class="phases">
+            <article class="phase">
+              <p class="when">Week 1</p>
+              <h3>Foundation</h3>
+              <ul>
+                <li>Appoint process owners</li>
+                <li>Standardize the master tracker</li>
+                <li>Agree ticket statuses</li>
+                <li>Start the daily lead sync</li>
+                <li>Define the monthly pack</li>
+              </ul>
+            </article>
+            <article class="phase">
+              <p class="when">Weeks 2–3</p>
+              <h3>Engineering quality</h3>
+              <ul>
+                <li>Branching and pull request rules</li>
+                <li>QA entry and exit criteria</li>
+                <li>Regression for critical journeys</li>
+                <li>Requirement templates</li>
+                <li>Release checklist</li>
+              </ul>
+            </article>
+            <article class="phase">
+              <p class="when">Weeks 4–5</p>
+              <h3>Reliability &amp; security</h3>
+              <ul>
+                <li>Alert routing</li>
+                <li>Support ticket automation</li>
+                <li>Incident SLAs</li>
+                <li>Security gates</li>
+                <li>Backup verification</li>
+                <li>Recovery runbooks</li>
+              </ul>
+            </article>
+            <article class="phase">
+              <p class="when">Week 6</p>
+              <h3>Governance &amp; audit</h3>
+              <ul>
+                <li>Review compliance evidence</li>
+                <li>Measure the first KPI baseline</li>
+                <li>Record gaps and exceptions</li>
+                <li>Refine the SOPs that failed the audit</li>
+                <li>Publish the operating handbook</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="close" data-nav>
+          <p class="eyebrow">Governing principle</p>
+          <h2>Every requirement is traceable. Every task has an owner. Every change has evidence. Every release has approval. Every incident has a resolution path. Every recurring problem has a corrective action.</h2>
+          <ul class="close-row">
+            <li>P&amp;C</li>
+            <li>Salik–LIVA</li>
+            <li>Motor</li>
+            <li>One operating model</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

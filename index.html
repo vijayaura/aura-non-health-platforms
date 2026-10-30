@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <title>Technology Delivery &amp; Operations · Deck</title>
+  <link rel="stylesheet" href="css/deck.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23ffffff' width='32' height='32'/%3E%3Crect fill='%230c4bff' x='6' y='8' width='20' height='3'/%3E%3Crect fill='%2307070a' x='6' y='14' width='14' height='3'/%3E%3Crect fill='%232ec6ff' x='6' y='20' width='20' height='3'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <div class="viewport">
+    <main class="stage" id="stage" aria-live="polite">
+
+      <section class="slide slide-cover" data-section="Cover" data-title="Technology Delivery &amp; Operations" data-plain>
+        <div class="cover-bar">
+          <span>Engineering &amp; Delivery Framework</span>
+          <span>October 2026</span>
+        </div>
+        <div class="cover-text" data-stagger>
+          <h1><strong>Technology Delivery</strong><span>&amp; Operations</span></h1>
+          <p>One operating model for P&amp;C, Salik–LIVA, and Motor.</p>
+        </div>
+        <div class="glow" data-cols="34"></div>
+      </section>
+
+      <section class="slide" data-section="Overview" data-title="Agenda">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Agenda</p>
+          <h2 class="s-title">Four parts, one operating model.</h2>
+        </header>
+        <div class="s-body agenda" data-stagger>
+          <button type="button" class="agenda-item" data-goto="sec-frame">
+            <span class="big-num">01</span>
+            <strong>Frame</strong>
+            <ul><li>Six rules</li><li>Four milestones</li></ul>
+          </button>
+          <button type="button" class="agenda-item" data-goto="sec-build">
+            <span class="big-num">02</span>
+            <strong>Build</strong>
+            <ul><li>First five deliverables</li><li>Control flows</li><li>The SOP register</li></ul>
+          </button>
+          <button type="button" class="agenda-item" data-goto="sec-run">
+            <span class="big-num">03</span>
+            <strong>Run</strong>
+            <ul><li>Operating cadence</li><li>Management dashboard</li><li>Monthly pack</li></ul>
+          </button>
+          <button type="button" class="agenda-item" data-goto="sec-hold">
+            <span class="big-num">04</span>
+            <strong>Hold</strong>
+            <ul><li>Enforceability</li><li>Ownership</li><li>Six-week rollout</li></ul>
+          </button>
+        </div>
+      </section>
+
+      <section class="slide slide-divider" id="sec-frame" data-section="Frame" data-title="Section 01 · Frame" data-plain>
+        <div class="divider-text" data-stagger>
+          <p class="kicker">Section 01</p>
+          <h2><strong>Frame</strong><span>The rules and the milestones.</span></h2>
+        </div>
+        <div class="glow" data-cols="34"></div>
+      </section>
+
+      <section class="slide" data-section="Frame" data-title="Six rules">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Operating standard</p>
+          <h2 class="s-title">Six rules that make the model auditable.</h2>
+          <p class="s-lede">Each rule names an artifact someone can retrieve.</p>
+        </header>
+        <div class="s-body g c3 rules" data-stagger>
+          <article class="card rule">
+            <span class="rule-no">01</span>
+            <h3>Every requirement is traceable</h3>
+            <p>Linked to its ticket, pull request, test cases, defects, and the release that carries it.</p>
+          </article>
+          <article class="card rule">
+            <span class="rule-no">02</span>
+            <h3>Every task has an owner</h3>
+            <p>A named person, a due date, and a backup owner for every critical module.</p>
+          </article>
+          <article class="card rule">
+            <span class="rule-no">03</span>
+            <h3>Every change has evidence</h3>
+            <p>A ticket, acceptance criteria, a reviewed pull request, and test evidence.</p>
+          </article>
+          <article class="card rule">
+            <span class="rule-no">04</span>
+            <h3>Every release has approval</h3>
+            <p>QA sign-off, UAT where needed, a security check, and a named deployment approver.</p>
+          </article>
+          <article class="card rule">
+            <span class="rule-no">05</span>
+            <h3>Every incident has a resolution path</h3>
+            <p>Severity, an owner, a communication rhythm, and a record of how service was restored.</p>
+          </article>
+          <article class="card rule">
+            <span class="rule-no">06</span>
+            <h3>Every recurring problem has a corrective action</h3>
+            <p>A problem record with an owner and evidence that the cause was removed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Frame" data-title="Four milestones">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Delivery milestones</p>
+          <h2 class="s-title">Four milestones. <span class="light">Reported separately.</span></h2>
+          <p class="s-lede">A feature counts as delivered to the business only at the last milestone.</p>
+        </header>
+        <ol class="s-body timeline" data-stagger>
+          <li>
+            <span class="node"></span>
+            <span class="num">Milestone 01</span>
+            <h3>Development complete</h3>
+            <p>Merged through review, a linked ticket, and the quality gates.</p>
+          </li>
+          <li>
+            <span class="node"></span>
+            <span class="num">Milestone 02</span>
+            <h3>QA complete</h3>
+            <p>Tests, regression, and retests done. Release blockers closed or formally accepted.</p>
+          </li>
+          <li>
+            <span class="node"></span>
+            <span class="num">Milestone 03</span>
+            <h3>UAT approved</h3>
+            <p>The named business owner accepted the scenarios, with exceptions written down.</p>
+          </li>
+          <li class="is-final">
+            <span class="node"></span>
+            <span class="num">Milestone 04 · Delivered</span>
+            <h3>Released to production</h3>
+            <p>Deployed, and the critical business journeys validated afterwards.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="slide slide-divider" id="sec-build" data-section="Build" data-title="Section 02 · Build" data-plain>
+        <div class="divider-text" data-stagger>
+          <p class="kicker">Section 02</p>
+          <h2><strong>Build</strong><span>Where to start, the controls, and the register.</span></h2>
+        </div>
+        <div class="glow" data-cols="34"></div>
+      </section>
+
+      <section class="slide" data-section="Build" data-title="First five deliverables">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Where to start</p>
+          <h2 class="s-title">Five deliverables before the rest.</h2>
+          <p class="s-lede">Put these into daily use first. The rest of the handbook follows once this core is consistent.</p>
+        </header>
+        <ol class="s-body priorities" data-stagger>
+          <li><span class="p-no">01</span><strong>Master project tracker &amp; management dashboard</strong><p>One source of truth for all three platforms. Every item has an owner, module, priority, status, sprint, due date, and acceptance criteria.</p></li>
+          <li><span class="p-no">02</span><strong>Engineering development &amp; pull request SOP</strong><p>Definition of Ready, branch naming, mandatory review, linked tickets, test evidence, quality gates, and protected branches.</p></li>
+          <li><span class="p-no">03</span><strong>QA, UAT &amp; release management SOP</strong><p>Entry and exit criteria, regression, business sign-off, and a release checklist that ends with journey validation.</p></li>
+          <li><span class="p-no">04</span><strong>Production support &amp; incident management SOP</strong><p>Monitoring, the support module, Jira, email, severity, stakeholder updates, and a path to corrective action.</p></li>
+          <li><span class="p-no">05</span><strong>Business requirement &amp; product configuration SOP</strong><p>Intake, analysis, acceptance criteria, named approval, configuration testing, versioning, and traceability.</p></li>
+        </ol>
+      </section>
+
+      <section class="slide" data-section="Build" data-title="Completion tests">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Completion tests</p>
+          <h2 class="s-title">A step is finished only when the evidence exists.</h2>
+          <p class="s-lede">Four questions a lead can ask in the daily sync without opening every SOP.</p>
+        </header>
+        <div class="s-body g c4 tests" data-stagger>
+          <article class="card">
+            <span class="num">Work</span>
+            <h3>Ticket and evidence</h3>
+            <p>No work starts without a ticket. No ticket closes without acceptance criteria and the required evidence.</p>
+          </article>
+          <article class="card">
+            <span class="num">Release</span>
+            <h3>Journeys validated</h3>
+            <p>The release closes when critical business journeys have been checked in production, after the deployment.</p>
+          </article>
+          <article class="card">
+            <span class="num">Recovery</span>
+            <h3>Restore demonstrated</h3>
+            <p>A drill has restored the service and verified data integrity within the agreed RTO and RPO.</p>
+          </article>
+          <article class="card">
+            <span class="num">Configuration</span>
+            <h3>Human authorization</h3>
+            <p>AI-drafted formulas, rules, and documents are published only after validation and a named approval.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Build" data-title="Release checklist">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Release management</p>
+          <h2 class="s-title">Ten gates, in order.</h2>
+          <p class="s-lede">Rollback and database recovery are decided before the window opens. An emergency hotfix still needs testing and a retrospective approval.</p>
+        </header>
+        <ol class="s-body g c5 steps" data-stagger>
+          <li class="step"><span>01</span><strong>Scope and version freeze</strong></li>
+          <li class="step"><span>02</span><strong>Code freeze and merge approval</strong></li>
+          <li class="step"><span>03</span><strong>QA sign-off and regression</strong></li>
+          <li class="step"><span>04</span><strong>UAT sign-off where required</strong></li>
+          <li class="step"><span>05</span><strong>Security and configuration checks</strong></li>
+          <li class="step"><span>06</span><strong>Database migration and backup</strong></li>
+          <li class="step"><span>07</span><strong>Deployment approval and window</strong></li>
+          <li class="step"><span>08</span><strong>Execution by a named owner</strong></li>
+          <li class="step is-key"><span>09</span><em>Release complete</em><strong>Smoke test and business validation</strong></li>
+          <li class="step"><span>10</span><strong>Monitor, close, or roll back</strong></li>
+        </ol>
+      </section>
+
+      <section class="slide" data-section="Build" data-title="Incident path">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Production support</p>
+          <h2 class="s-title">One incident path for all three platforms.</h2>
+          <p class="s-lede">P&amp;C runs it through the Response Center. Salik–LIVA and Motor use the same severity, ownership, and communication rules.</p>
+        </header>
+        <div class="s-body incident">
+          <ol class="g c5 flow" data-stagger>
+            <li class="step"><span>01 · Detect</span><strong>APM, logs, uptime, API failures, and business alerts</strong></li>
+            <li class="step"><span>02 · Record</span><strong>Ticket, logs, environment, correlation ID, and product</strong></li>
+            <li class="step"><span>03 · Classify</span><strong>Severity, impact, module team, and a commander when major</strong></li>
+            <li class="step"><span>04 · Recover</span><strong>Investigate, mitigate, communicate, fix, and validate</strong></li>
+            <li class="step"><span>05 · Prevent</span><strong>Root cause, corrective action, and a post-incident review</strong></li>
+          </ol>
+          <div class="record">
+            <p class="label">Every incident record carries</p>
+            <ul class="fields" data-stagger>
+              <li>Platform</li><li>Environment</li><li>Service</li><li>Business impact</li><li>Severity</li><li>First detected</li>
+              <li>Ticket owner</li><li>Timeline</li><li>Linked deployment</li><li>Root cause</li><li>Corrective action</li><li>Next update time</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Build" data-title="AI-assisted configuration">
+        <header class="s-head" data-stagger>
+          <p class="kicker">AI-assisted product configuration</p>
+          <h2 class="s-title">AI drafts. <span class="light">People approve.</span></h2>
+          <p class="s-lede">Drafts come from an approved specification. Publication stays with a product owner or an authorized underwriter.</p>
+        </header>
+        <div class="s-body ai">
+          <ol class="g c7 steps" data-stagger>
+            <li class="step"><span>01</span><strong>Draft fields and validation</strong></li>
+            <li class="step"><span>02</span><strong>Draft formulas, rules, and documents</strong></li>
+            <li class="step"><span>03</span><strong>Consistency checks</strong></li>
+            <li class="step"><span>04</span><strong>Scenario validation</strong></li>
+            <li class="step is-key"><span>05</span><em>Gate</em><strong>Human approval</strong></li>
+            <li class="step"><span>06</span><strong>Version, publish, and audit</strong></li>
+            <li class="step"><span>07</span><strong>Monitor and roll back</strong></li>
+          </ol>
+          <p class="callout">Formulas, underwriting rules, and customer-facing documents are never published automatically. The same rule covers Motor data cleansing before a vehicle is rated.</p>
+        </div>
+      </section>
+
+      <section class="slide" id="s-register" data-section="Register" data-title="The SOP register">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Master register</p>
+          <h2 class="s-title"><span data-stat="sops">104</span> common SOPs in <span data-stat="domains">11</span> domains.</h2>
+          <p class="s-lede">Every SOP uses the same template: owner, approver, trigger, procedure, evidence, and escalation.</p>
+        </header>
+        <div class="s-body g c4 tiles" id="register-tiles" data-stagger></div>
+      </section>
+
+      <section class="slide slide-divider" id="sec-run" data-section="Run" data-title="Section 03 · Run" data-plain>
+        <div class="divider-text" data-stagger>
+          <p class="kicker">Section 03</p>
+          <h2><strong>Run</strong><span>The cadence, the dashboard, and the monthly pack.</span></h2>
+        </div>
+        <div class="glow" data-cols="34"></div>
+      </section>
+
+      <section class="slide" data-section="Run" data-title="Operating cadence">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Operating cadence</p>
+          <h2 class="s-title">Every meeting has an owner and an output.</h2>
+          <p class="s-lede">The daily sync handles exceptions and decisions. Routine status stays in the tracker.</p>
+        </header>
+        <div class="s-body">
+          <table class="table cadence">
+            <thead><tr><th>When</th><th>Meeting</th><th>Owner</th><th>Output</th></tr></thead>
+            <tbody data-stagger>
+              <tr><td class="when">Daily · 30 min</td><td><strong>Engineering leads sync</strong></td><td>Technology lead</td><td>Priorities, blockers, escalations, and owners</td></tr>
+              <tr><td class="when">Daily</td><td><strong>Production support review</strong></td><td>Support lead</td><td>Open incidents, SLA risks, and next actions</td></tr>
+              <tr><td class="when">Weekly</td><td><strong>Sprint and delivery review</strong></td><td>Project manager / leads</td><td>Forecast, carry-forward, and dependencies</td></tr>
+              <tr><td class="when">Weekly</td><td><strong>QA and defect review</strong></td><td>QA lead</td><td>Defect trends, release blockers, regression status</td></tr>
+              <tr><td class="when">As needed</td><td><strong>Architecture review</strong></td><td>Technical lead</td><td>Design decisions and technical risk actions</td></tr>
+              <tr><td class="when">Every sprint</td><td><strong>Planning, demo, retrospective</strong></td><td>Team leads</td><td>Commitment, accepted work, improvements</td></tr>
+              <tr><td class="when">Monthly</td><td><strong>Management delivery review</strong></td><td>Technology leadership</td><td>Features, metrics, risks, next-month plan</td></tr>
+              <tr><td class="when">Monthly</td><td><strong>Security and access review</strong></td><td>Security / platform owners</td><td>Vulnerabilities, access exceptions, remediation</td></tr>
+              <tr><td class="when">Quarterly</td><td><strong>DR and resilience review</strong></td><td>Infrastructure / operations</td><td>Recovery-test evidence and remediation plan</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Run" data-title="Management dashboard">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Management dashboard</p>
+          <h2 class="s-title">One scorecard. <span class="light">Three platforms.</span></h2>
+          <p class="s-lede">Drill down by platform, module, sprint, and owner. Same definitions everywhere. Baseline first, then targets.</p>
+        </header>
+        <div class="s-body g c4 scorecard" data-stagger>
+          <article class="card score"><span class="num">01</span><h3>Delivery</h3><p>Commit versus done. Sprint predictability, milestones, and release status.</p></article>
+          <article class="card score"><span class="num">02</span><h3>Quality</h3><p>Defect trends, escaped defects, reopen rate, and regression results.</p></article>
+          <article class="card score"><span class="num">03</span><h3>Reliability</h3><p>Availability, latency, incidents, and time to restore service.</p></article>
+          <article class="card score"><span class="num">04</span><h3>Resources</h3><p>Allocation, support load, blockers, leave, and module ownership.</p></article>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Run" data-title="Monthly KPIs">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Monthly KPIs</p>
+          <h2 class="s-title">Ten measures, one definition each.</h2>
+        </header>
+        <div class="s-body kpi-wrap">
+          <div class="g c5 kpis" data-stagger>
+            <article class="kpi"><strong>Sprint completion rate</strong><p>Planned versus completed work.</p></article>
+            <article class="kpi"><strong>Cycle time</strong><p>From the start of work to completion.</p></article>
+            <article class="kpi"><strong>Release frequency</strong><p>How often production releases occur.</p></article>
+            <article class="kpi"><strong>Change failure rate</strong><p>Deployments needing rollback, hotfix, or remediation.</p></article>
+            <article class="kpi"><strong>Defect escape rate</strong><p>Defects found after release, against all defects.</p></article>
+            <article class="kpi"><strong>MTTR</strong><p>Mean time to restore service after an incident.</p></article>
+            <article class="kpi"><strong>SLA compliance</strong><p>Incidents handled inside agreed targets.</p></article>
+            <article class="kpi"><strong>API success rate</strong><p>Reliability of critical external integrations.</p></article>
+            <article class="kpi"><strong>Reopened ticket rate</strong><p>Gaps in implementation or verification.</p></article>
+            <article class="kpi"><strong>Overdue action items</strong><p>Decisions and actions past their due date.</p></article>
+          </div>
+          <p class="callout">Judge contribution through quality, predictability, and collaboration. Account for complexity, support duty, review time, and dependencies.</p>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Run" data-title="Monthly management pack">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Monthly management pack</p>
+          <h2 class="s-title">Nine source reports. <span class="light">Four packs.</span></h2>
+          <p class="s-lede">Business performance, delivery, reliability, and people stay distinct in the monthly review.</p>
+        </header>
+        <div class="s-body g c4 packs" data-stagger>
+          <article class="card pack"><span class="num">Pack 1 · SOP-001</span><h3>Business transaction metrics</h3><p>What volume did each platform process, how did it move, and where did conversion or transactions fail?</p></article>
+          <article class="card pack"><span class="num">Pack 2 · SOP-002, 006, 008</span><h3>Delivery &amp; release</h3><p>What reached production and UAT, what is pending, and what is committed next month?</p></article>
+          <article class="card pack"><span class="num">Pack 3 · SOP-003, 005, 007, 009</span><h3>Technology &amp; reliability</h3><p>How are predictability, quality, deployments, incidents, API reliability, and recovery trending?</p></article>
+          <article class="card pack"><span class="num">Pack 4 · SOP-004, 006</span><h3>Team &amp; next month</h3><p>What did each person and module deliver, and what are next month’s sprint commitments?</p></article>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Run" data-title="Business transaction report">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Pack 1 · Business transaction metrics</p>
+          <h2 class="s-title">Define the unit before the number.</h2>
+          <p class="s-lede">Unique quotes apart from quote versions. API attempts apart from successful transactions. New policies apart from renewals and endorsements.</p>
+        </header>
+        <div class="s-body g c4 groups" data-stagger>
+          <article class="card"><h3>Transaction volume</h3><ul><li>Initiated and completed</li><li>Quotes and policies issued</li><li>Premium or transaction value</li><li>By product, insurer, broker, channel</li></ul></article>
+          <article class="card"><h3>Conversion</h3><ul><li>Leads, quotes, and policies</li><li>Quote-to-policy conversion</li><li>Drop-off by journey stage</li><li>Time from quote to issue</li></ul></article>
+          <article class="card"><h3>Operational performance</h3><ul><li>Successful and failed transactions</li><li>Failure rate and top reasons</li><li>External API success and downtime</li><li>Retries and reconciliation gaps</li></ul></article>
+          <article class="card"><h3>Month on month</h3><ul><li>Current month against the last</li><li>Absolute change and growth</li><li>Product and platform trends</li><li>Reasons for a material move</li></ul></article>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Run" data-title="Source reports">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Source reports</p>
+          <h2 class="s-title">Nine reports feed the four packs.</h2>
+        </header>
+        <div class="s-body">
+          <table class="table matrix">
+            <thead><tr><th>Source</th><th>Report</th><th>What it must contain</th><th>Pack</th></tr></thead>
+            <tbody data-stagger>
+              <tr><td class="when">SOP-001</td><td><strong>Business transaction metrics</strong></td><td>Volumes, conversion, failures, and platform performance, month on month</td><td class="pack-no">1</td></tr>
+              <tr><td class="when">SOP-002</td><td><strong>Delivery report</strong></td><td>Production releases, UAT deliveries, pending work, and delayed commitments</td><td class="pack-no">2</td></tr>
+              <tr><td class="when">SOP-003</td><td><strong>Technology metrics</strong></td><td>Sprint completion, defect leakage, deployments, incidents, resolution time</td><td class="pack-no">3</td></tr>
+              <tr><td class="when">SOP-004</td><td><strong>Individual work &amp; efficiency</strong></td><td>Contribution, ownership, reviews, and blockers, read with complexity</td><td class="pack-no">4</td></tr>
+              <tr><td class="when">SOP-005</td><td><strong>Platform health</strong></td><td>Status, dependencies, risks, debt, and open issues per platform</td><td class="pack-no">3</td></tr>
+              <tr><td class="when">SOP-006</td><td><strong>Next-month plan</strong></td><td>Features, sprint commitments, resource allocation, and dependencies</td><td class="pack-no">2 · 4</td></tr>
+              <tr><td class="when">SOP-007</td><td><strong>Risk &amp; escalation</strong></td><td>Impact, owner, mitigation, due date, and escalation status</td><td class="pack-no">3</td></tr>
+              <tr><td class="when">SOP-008</td><td><strong>Customer commitments</strong></td><td>Promised dates, client dependencies, UAT and production deadlines</td><td class="pack-no">2</td></tr>
+              <tr><td class="when">SOP-009</td><td><strong>Technical debt</strong></td><td>Aging issues, remediation, risk level, and the sprint that takes it</td><td class="pack-no">3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="slide slide-divider" id="sec-hold" data-section="Hold" data-title="Section 04 · Hold" data-plain>
+        <div class="divider-text" data-stagger>
+          <p class="kicker">Section 04</p>
+          <h2><strong>Hold</strong><span>Make it enforceable, then roll it out.</span></h2>
+        </div>
+        <div class="glow" data-cols="34"></div>
+      </section>
+
+      <section class="slide" data-section="Hold" data-title="SOP template">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Enforceability</p>
+          <h2 class="s-title">Every SOP uses the same twelve parts.</h2>
+        </header>
+        <ol class="s-body g c4 template" data-stagger>
+          <li><span>01</span>SOP ID, title, and version</li>
+          <li><span>02</span>Purpose and scope</li>
+          <li><span>03</span>Applicable platforms and modules</li>
+          <li><span>04</span>Process owner and roles</li>
+          <li><span>05</span>Trigger and required inputs</li>
+          <li><span>06</span>Step-by-step procedure</li>
+          <li><span>07</span>Checklist and approval gates</li>
+          <li><span>08</span>Expected outputs and evidence</li>
+          <li><span>09</span>SLA, deadlines, and escalation</li>
+          <li><span>10</span>Exceptions and emergencies</li>
+          <li><span>11</span>Tools, templates, and links</li>
+          <li><span>12</span>Audit trail and change history</li>
+        </ol>
+      </section>
+
+      <section class="slide" data-section="Hold" data-title="Ownership and control">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Ownership</p>
+          <h2 class="s-title">Named approver. <span class="light">An audit trail.</span></h2>
+        </header>
+        <div class="s-body raci">
+          <div class="g c4" data-stagger>
+            <article class="card role"><span class="letter">R</span><h3>Responsible</h3><p>Does the work and produces the evidence.</p></article>
+            <article class="card role"><span class="letter">A</span><h3>Approver</h3><p>Signs the output and accepts exceptions.</p></article>
+            <article class="card role"><span class="letter">C</span><h3>Consulted</h3><p>Contributes before the decision is made.</p></article>
+            <article class="card role"><span class="letter">I</span><h3>Informed</h3><p>Receives the outcome and any change in date.</p></article>
+          </div>
+          <ul class="g c3 system" data-stagger>
+            <li><strong>Central repository</strong><span>Version-controlled home for every SOP</span></li>
+            <li><strong>Master register</strong><span>Owner and next review date per SOP</span></li>
+            <li><strong>Acknowledgment</strong><span>Training or sign-off for the people it applies to</span></li>
+            <li><strong>Compliance audit</strong><span>Periodic check of evidence against procedure</span></li>
+            <li><strong>Exception register</strong><span>Approved deviations, with expiry and approver</span></li>
+            <li><strong>Corrective action</strong><span>Raised when the same gap shows up again</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide" data-section="Hold" data-title="Six-week rollout">
+        <header class="s-head" data-stagger>
+          <p class="kicker">Rollout</p>
+          <h2 class="s-title">Four phases. <span class="light">About six weeks.</span></h2>
+        </header>
+        <div class="s-body g c4 phases" data-stagger>
+          <article class="phase">
+            <span class="bar"></span>
+            <span class="num">Week 1</span>
+            <h3>Foundation</h3>
+            <ul><li>Appoint process owners</li><li>Standardize the master tracker</li><li>Agree ticket statuses</li><li>Start the daily lead sync</li><li>Define the monthly pack</li></ul>
+          </article>
+          <article class="phase">
+            <span class="bar"></span>
+            <span class="num">Weeks 2–3</span>
+            <h3>Engineering quality</h3>
+            <ul><li>Branching and pull request rules</li><li>QA entry and exit criteria</li><li>Regression for critical journeys</li><li>Requirement templates</li><li>Release checklist</li></ul>
+          </article>
+          <article class="phase">
+            <span class="bar"></span>
+            <span class="num">Weeks 4–5</span>
+            <h3>Reliability &amp; security</h3>
+            <ul><li>Alert routing</li><li>Support ticket automation</li><li>Incident SLAs</li><li>Security gates</li><li>Backup verification</li><li>Recovery runbooks</li></ul>
+          </article>
+          <article class="phase">
+            <span class="bar"></span>
+            <span class="num">Week 6</span>
+            <h3>Governance &amp; audit</h3>
+            <ul><li>Review compliance evidence</li><li>Measure the first KPI baseline</li><li>Record gaps and exceptions</li><li>Refine SOPs that failed audit</li><li>Publish the handbook</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide slide-close" data-section="Close" data-title="Governing principle" data-plain>
+        <div class="close-text" data-stagger>
+          <p class="kicker">Governing principle</p>
+          <p class="close-line"><strong>Every requirement</strong> is traceable.</p>
+          <p class="close-line"><strong>Every task</strong> has an owner.</p>
+          <p class="close-line"><strong>Every change</strong> has evidence.</p>
+          <p class="close-line"><strong>Every release</strong> has approval.</p>
+          <p class="close-line"><strong>Every incident</strong> has a resolution path.</p>
+          <p class="close-line"><strong>Every recurring problem</strong> has a corrective action.</p>
+        </div>
+        <div class="glow" data-cols="34"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <nav class="hud" aria-label="Slide controls">
+    <button type="button" id="prev" aria-label="Previous slide">&#8249;</button>
+    <span class="hud-count"><strong id="count-now">1</strong> / <span id="count-all">1</span><em id="count-section"></em></span>
+    <button type="button" id="next" aria-label="Next slide">&#8250;</button>
+    <span class="hud-sep"></span>
+    <button type="button" id="open-sorter" class="hud-text">Slides</button>
+    <button type="button" id="fullscreen" class="hud-text">Full screen</button>
+  </nav>
+
+  <div class="sorter" id="sorter" hidden>
+    <div class="sorter-head">
+      <div>
+        <p class="kicker">All slides</p>
+        <h2>Technology Delivery &amp; Operations</h2>
+      </div>
+      <div class="sorter-actions">
+        <a href="doc.html">Document view</a>
+        <button type="button" id="close-sorter">Close</button>
+      </div>
+    </div>
+    <div class="sorter-grid" id="sorter-grid"></div>
+    <p class="sorter-keys">Arrow keys or space to move · S for slides · F for full screen · Esc to close</p>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/deck.js"></script>
+</body>
+</html>
