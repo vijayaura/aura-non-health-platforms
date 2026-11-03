@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#ffffff">
   <title>Technology Delivery &amp; Operations SOP</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261103">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%2310202e' width='32' height='32'/%3E%3Crect fill='%23b5523a' x='6' y='8' width='20' height='3'/%3E%3Crect fill='%23f3efe7' x='6' y='14' width='14' height='3'/%3E%3Crect fill='%23f3efe7' x='6' y='20' width='20' height='3'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -78,7 +78,7 @@
           </div>
           <ul class="hero-stats">
             <li><strong data-stat="domains">11</strong><span>Domains in the common register</span></li>
-            <li><strong data-stat="sops">104</strong><span>Common SOPs every team follows</span></li>
+            <li><strong data-stat="sops">99</strong><span>Common SOPs every team follows</span></li>
             <li><strong data-stat="platform">21</strong><span>Platform SOPs for what truly differs</span></li>
             <li><strong>4</strong><span>Reports in the monthly management pack</span></li>
           </ul>
@@ -374,7 +374,7 @@
         <section class="section" id="register" data-nav>
           <div class="section-head">
             <p class="eyebrow">06 · Master register</p>
-            <h2>104 common SOPs in 11 domains.</h2>
+            <h2>99 common SOPs in 11 domains.</h2>
             <p class="lede">This is the controlled list. Each SOP will use the same document template: owner, approver, trigger, procedure, evidence, and escalation.</p>
           </div>
           <div class="toc" id="toc" aria-label="Domains"></div>
@@ -501,29 +501,29 @@
         <section class="section" id="reporting" data-nav>
           <div class="section-head">
             <p class="eyebrow">09 · Monthly management pack</p>
-            <h2>Nine source reports. Four packs leadership reads.</h2>
-            <p class="lede">Teams keep the nine reports because each one has a different owner and evidence trail. The management review reads four packs so business performance, delivery, reliability, and people stay distinct.</p>
+            <h2>Four reports. One monthly review.</h2>
+            <p class="lede">Each report has its own owner and evidence trail. The management review reads them as four packs so business performance, delivery, technology, and next month’s plan stay distinct.</p>
           </div>
           <div class="packs">
             <article class="pack">
               <p class="n">Pack 1 · SOP-001</p>
               <h3>Business transaction metrics</h3>
-              <p>What volume did each platform process, how did it move, and where did conversion or transactions fail?</p>
+              <p>What volume did each platform and tenant process, how did it move, and where did conversion or transactions fail?</p>
             </article>
             <article class="pack">
-              <p class="n">Pack 2 · SOP-002, 006, 008</p>
-              <h3>Delivery &amp; release</h3>
-              <p>What reached production, what reached UAT, what is still pending, and what is committed next month?</p>
+              <p class="n">Pack 2 · SOP-002</p>
+              <h3>Delivery</h3>
+              <p>Which of the latest features and fixes reached production this month, and what was delivered to UAT?</p>
             </article>
             <article class="pack">
-              <p class="n">Pack 3 · SOP-003, 005, 007, 009</p>
-              <h3>Technology &amp; reliability</h3>
-              <p>How are predictability, quality, deployments, incidents, API reliability, and recovery trending?</p>
+              <p class="n">Pack 3 · SOP-003</p>
+              <h3>Technology metrics</h3>
+              <p>How many production defects were there, was there any downtime, and how is application latency trending?</p>
             </article>
             <article class="pack">
-              <p class="n">Pack 4 · SOP-004, 006</p>
-              <h3>Team &amp; next month</h3>
-              <p>What did each person and module deliver, and what are the sprint commitments for next month?</p>
+              <p class="n">Pack 4 · SOP-004</p>
+              <h3>Next month</h3>
+              <p>Which features are planned for development next month, and which are already in progress?</p>
             </article>
           </div>
 
@@ -538,7 +538,7 @@
                 <li>Initiated and completed</li>
                 <li>Quotes and policies issued</li>
                 <li>Premium or transaction value</li>
-                <li>By product, insurer, broker, or channel</li>
+                <li>By tenant, product, insurer, or channel</li>
               </ul>
             </article>
             <article class="group">
@@ -577,63 +577,28 @@
                   <th>Source</th>
                   <th>Report</th>
                   <th>What it must contain</th>
-                  <th>Pack</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>SOP-001</td>
-                  <td>Business transaction metrics</td>
-                  <td>Volumes, conversion, failures, and platform performance, month on month.</td>
-                  <td>1</td>
+                  <td>Monthly business transaction metrics</td>
+                  <td>Volumes, transactions, growth, conversion, and failures, month on month, by tenant where applicable.</td>
                 </tr>
                 <tr>
                   <td>SOP-002</td>
-                  <td>Delivery report</td>
-                  <td>Production releases, UAT deliveries, pending work, and delayed commitments, by milestone.</td>
-                  <td>2</td>
+                  <td>Monthly delivery report</td>
+                  <td>The latest features and fixes pushed to production, and the work delivered to UAT.</td>
                 </tr>
                 <tr>
                   <td>SOP-003</td>
-                  <td>Technology metrics</td>
-                  <td>Sprint completion, defect leakage, deployment frequency, incidents, and resolution time.</td>
-                  <td>3</td>
+                  <td>Monthly technology metrics</td>
+                  <td>Production defects, downtime if any, and application latency.</td>
                 </tr>
                 <tr>
                   <td>SOP-004</td>
-                  <td>Individual work &amp; efficiency</td>
-                  <td>Contribution, ownership, reviews, QA coverage, and blockers, read with complexity and support load.</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>SOP-005</td>
-                  <td>Platform health</td>
-                  <td>P&amp;C, Salik–LIVA, and Motor status, dependencies, risks, debt, and open issues.</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>SOP-006</td>
-                  <td>Next-month plan</td>
-                  <td>Features, sprint commitments, resource allocation, and dependencies.</td>
-                  <td>2 and 4</td>
-                </tr>
-                <tr>
-                  <td>SOP-007</td>
-                  <td>Risk &amp; escalation</td>
-                  <td>Impact, owner, mitigation, due date, and whether it has been escalated.</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>SOP-008</td>
-                  <td>Customer commitments</td>
-                  <td>Promised dates, client dependencies, UAT commitments, and production deadlines.</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>SOP-009</td>
-                  <td>Technical debt</td>
-                  <td>Aging issues, remediation, risk level, and the sprint that will take the work.</td>
-                  <td>3</td>
+                  <td>Next-month planned &amp; in-progress features</td>
+                  <td>Features planned for development next month and features already in progress.</td>
                 </tr>
               </tbody>
             </table>
@@ -757,7 +722,7 @@
     </div>
   </div>
 
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/data.js?v=20261103"></script>
+  <script src="js/app.js?v=20261103"></script>
 </body>
 </html>

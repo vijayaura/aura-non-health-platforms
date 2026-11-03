@@ -846,6 +846,14 @@ p { text-wrap: pretty; }
 
 .matrix td:nth-child(2) { width: 27%; }
 
+.matrix.is-roomy { font-size: 30px; }
+
+.matrix.is-roomy td { padding-top: 40px; padding-bottom: 40px; }
+
+.matrix.is-roomy td:nth-child(2) { width: 36%; }
+
+.matrix.is-roomy .when { font-size: 22px; }
+
 .pack-no {
   text-align: right;
   font-weight: 600;
